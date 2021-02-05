@@ -7,6 +7,8 @@ import { IGameSummary } from './IGameSummary';
 import { IObservable, ObservableHandler } from '../Observable/IObservable';
 import { GameEvents } from './GameEvents';
 
+// TODO: Refactor this to not implement IObservable
+//       and instead extend EventEmitter
 export class Game implements IObservable {
   private static readonly TIMER_BETWEEN_ROUNDS = 5000;
   private static readonly MAX_CARDS = 6;
