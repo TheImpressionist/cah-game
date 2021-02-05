@@ -1,0 +1,23 @@
+{
+  "name": "@cah-game/root",
+  "version": "0.0.1",
+  "workspaces": [
+    "./packages/server/*",
+    "./packages/client/*"
+  ],
+  "description": "Cargs Against Humanity game, server, and client",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "test:server": "test ./packages/server",
+    "start:server": "npm run start --prefix ./packages/server"
+  },
+  "keywords": [
+    "Cards",
+    "Against",
+    "Humanity",
+    "CAH"
+  ],
+  "author": "Dominykas Bartkus",
+  "license": "ISC"
+}
